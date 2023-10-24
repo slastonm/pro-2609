@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .abs{
+            width: 150px;
+            height: 150px;
+            border: 2px solid red;
+            position: absolute;
+            top: 0;
+            left: 170px;
+            z-index: 11;
+        }
+        .container{
+            width: 90%;
+            padding: 50px;
+            border: 2px solid black;
+        }
+        .remove{
+            position: relative;
+            z-index: 10;
+        }
+    </style>
+    <script src="events.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>
+            Hello js
+        </h1>
+        <button class="clickBtn">
+            click
+        </button>
+        <button class="addClick">
+            Add click
+        </button>
+        <div class="abs">
+            cover element
+        </div>
+        <button class="remove">
+            z index
+        </button>
+        <button disabled class="remove">
+            Remove click from add click
+        </button>
+    </div>
+
+    <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Sale</li>
+    </ul>
+
+    <a href="https://cssgridgarden.com/" target="_blank">
+        Visit site css grid garden
+    </a>
+    <input type="text">
+
+</body>
+</html>
