@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-8 mx-auto">
+                <div class="order-block">
+                    <h2> 
+                        Замовлення піци
+                    </h2>
+                    <form action="" id="pizzaForm">
+                        <div class="text-center">
+                            <img class="w-25" src="https://img.freepik.com/free-vector/flying-slice-pizza-cartoon-vector-illustration-fast-food-concept-isolated-vector-flat-cartoon-style_138676-1934.jpg?w=2000" alt="picture">
+                        </div>
+                        <label class="form-label">
+                            Виберіть розмір
+                        </label>
+                        <div class="form-check">
+                            <input type="radio" name="pizzaSize" id="small" value="small">
+                            <label for="small" class="form-check-label">Мала</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="pizzaSize" id="medium" value="medium">
+                            <label for="medium" class="form-check-label">Середня</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="pizzaSize" id="large" value="large">
+                            <label for="large" class="form-check-label">Велика</label>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">
+                                Виберіть піццу
+                            </label>
+                            <select name="pizzaType" id="pizzaType">
+                                <option value="margarita">Маргарита</option>
+                                <option value="cheeseType">Сирна</option>
+                                <option value="gavai">Гавайська</option>
+
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">
+                                Виберіть добавку до замовлення:
+                            </label>
+                            <div class="form-check  mb-1">
+                                <input class="form-check-input pe-1" type="checkbox" name="topping" value="cheese" id="cheese">
+                                <label class="form-check-label" for="cheese">Сир</label>
+                            </div>
+                            <div class="form-check mb-1">
+                                <input class="form-check-input pe-1" type="checkbox" name="topping" value="mushrooms" id="mushrooms">
+                                <label class="form-check-label" for="mushrooms">Гриби</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input pe-1" type="checkbox" name="topping" value="pepers" id="pepers">
+                                <label class="form-check-label" for="pepers">Перець</label>
+                            </div>
+                        </div>
+                        <p id="totalPrice">
+                            Вартість замовлення: 0
+                        </p>
+                        <button class="btn btn-primary orderBtn">
+                            Замовити
+                        </button>
+                    </form>
+                </div>
+                <form id="orderForm" class="d-none" action="">
+                    <div class="form-group">
+                        <label for="name">
+                            Імя замовника
+                        </label>
+                        <input type="text" class="form-control"  id="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">
+                            Телефон
+                        </label>
+                        <input type="text" class="form-control"  id="phone">
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="email">
+                            Email
+                        </label>
+                        <input type="text" class="form-control"  id="email">
+                    </div>
+                    <button disabled class="btn btn-primary sendMail">
+                        Відправити замовлення
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>
