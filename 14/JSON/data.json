@@ -1,0 +1,11 @@
+{
+    "name":"Tom",
+    "isLogin":true,
+    "age":34,
+    "skills":[
+        {
+            "forntEnd":["html", "css", "js"],
+            "qa":["selenium", "git"]
+        }
+    ]
+}
